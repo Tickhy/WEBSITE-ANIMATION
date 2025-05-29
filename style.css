@@ -1,0 +1,167 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.welcome{
+    background-image: linear-gradient(#33ff,#33ffd8);
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.container a{
+    right: 45%;
+    top: 45%;
+    position: absolute;
+    font-size: 44px;
+    color: rgb(3, 37, 66);
+    text-decoration: none;
+    border:3px solid#eb0612;
+    padding:15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+h1
+{
+    color: red;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 1;
+}
+h2
+{
+    color: red;
+    position: absolute;
+    bottom: 20%;
+    left: 51%;
+    transform: translate(-50%,-30%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    z-index: 0;
+    text-align: center;
+}
+ul li
+{
+    position: absolute;
+    border: 1px solid #eb0612;
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    opacity: 0;
+    background: #f3f4;
+}
+.square li
+{
+    top: 50vh;
+    left: 45vw;
+    animation: square 10s linear infinite;
+}
+.square li:nth-child(2)
+{
+    top: 80vh;
+    left: 10vw;
+    animation-delay: 2s;
+}
+.square li:nth-child(3)
+{
+    top: 80vh;
+    left: 85vw;
+    animation-delay: 4s;
+}
+.square li:nth-child(4)
+{
+    top: 10vh;
+    left: 70vw;
+    animation-delay: 6s;
+}
+.square li:nth-child(5)
+{
+    top: 10vh;
+    left: 10vw;
+    animation-delay: 8s;
+}
+@keyframes square
+{
+    0%
+    {
+        transform: scale(0) rotatey(0deg);
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(5) rotatey(2000deg);
+        opacity: 0;
+    }   
+}
+.circle li
+{
+    bottom: 0;
+    left: 15vw;
+    animation: circle 10s linear infinite;
+}
+.circle li:nth-child(2)
+{
+    left: 35vw;
+    animation-delay: 2s;
+}
+.circle li:nth-child(3)
+{
+    left: 55vw;
+    animation-delay: 4s;
+}
+.circle li:nth-child(4)
+{
+    left: 75vw;
+    animation-delay: 8s;
+}
+.circle li:nth-child(5)
+{
+    left: 90vw;
+    animation-delay: 6s;
+}
+@keyframes circle
+{
+    0%
+    {
+        transform: scale(0) rotate(0deg);
+        opacity: 1;
+        bottom: 0;
+        border-radius: 0;
+    }
+    100%
+    {
+        transform: scale(5) rotate(1000deg);
+        opacity: 0;
+        bottom: 90vh;
+        border-radius: 50%;
+    }
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800,900&display=swap');
+
+*{
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fbc02d;
+}
+.header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4527a0;
+    padding: 25px;
+    transition: 0.3s;
+
+}
